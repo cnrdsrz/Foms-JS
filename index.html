@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms Validation</title>
+</head>
+<body>
+    
+    <form id="form" action="/" method="GET">
+    <div>
+    <label for="nombre">Nombre</label> <input class="input" type="text" id="nombre">
+    <label for="apellido">Apellido</label> <input class="input" type="text" id="apellido">
+    <label for="edad">Edad</label> <input type= "number" name="edad" id="edad">
+    <label for="email">E-mail</label> <input type="email" name="email" id="email">
+    <label for="terms"> Términos y Condiciones</label> <input type="checkbox" name="checkbox" id="terms">
+    </div>
+    <button type="submit">Enviar</button>
+    </form>
+    <div>
+        <p class="resultado" ></p>
+    </div>
+    <div id="error"></div>
+    <script defer src="main.js"></script>
+</body>
+</html>
